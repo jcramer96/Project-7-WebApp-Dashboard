@@ -1,0 +1,13 @@
+/* ============================================= */
+/*              Traffic Subnav                   */
+/* ============================================= */
+
+.traffic-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.traffic-nav-link {
+    margin: auto;
+}

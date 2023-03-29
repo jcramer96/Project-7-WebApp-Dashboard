@@ -1,0 +1,26 @@
+/* ============================================= */
+/*                  Images                       */
+/* ============================================= */
+
+.profile-img {
+    border-radius: 50%;
+    width: 50px;
+    margin: auto 10px
+}
+
+.social-image {
+    width: 80px;
+    height: 80px;
+    fill: var(--white);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* ============================================= */
+/*                  Widgets                      */
+/* ============================================= */
+
+.widget-container-full, .widget-container-half { 
+    width: 95vw;
+}

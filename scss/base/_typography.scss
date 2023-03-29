@@ -1,0 +1,60 @@
+/* ============================================= */
+/*              Typography                      */
+/* ============================================= */
+
+* {
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: 300;
+}
+
+header {
+    background-color: $color-primary;
+    color: $white;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+span {
+    font-weight: 500;
+}
+
+nav{
+    background-color: $color-secondary;
+}
+
+.profile-name {
+    margin: auto;
+    font-size: .8rem;
+}
+
+.headline {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.social-title {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.member-numbers {
+    color: $grey;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.social-text{
+    margin-left: 10px;
+}

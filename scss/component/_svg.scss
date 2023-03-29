@@ -1,0 +1,33 @@
+/* ============================================= */
+/*              Notification Bell                */
+/* ============================================= */
+
+.bell-container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-right: 1px solid $white;
+}
+
+.notification-bell {
+    width: 30px;
+    margin: auto 10px;
+}
+
+.bell {
+    fill: $white;
+}
+
+.notify {
+    stroke: $color-quarternary;
+    fill: $color-quarternary;
+}
+
+/* ============================================= */
+/*              Nav Icons                       */
+/* ============================================= */
+
+.nav-icon {
+    width: 40px;
+    fill: var(--white);
+}
