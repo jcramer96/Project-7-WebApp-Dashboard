@@ -9,3 +9,43 @@
     margin-top: 10px;
     margin-left: 90%;
 }
+
+/* ============================================= */
+/*                  Form Buttons                 */
+/* ============================================= */
+
+.button-primary {
+    display: block;
+    height: 50px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    background-color: $color-primary;
+    color: $white;
+    text-transform: uppercase;
+}
+
+#send {
+    width: 90%;
+    margin: auto auto 15px auto;
+}
+
+.settings-button {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+}
+
+#save {
+    width: 80%;
+}
+
+#cancel {
+    width: 80%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: grey;
+    color: $white;
+    text-transform: uppercase;
+}

@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 span {
@@ -27,8 +27,10 @@ nav{
 }
 
 .profile-name {
-    margin: auto;
     font-size: .8rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .headline {
@@ -44,17 +46,30 @@ h3 {
 }
 
 .social-title {
-    color: var(--color-primary);
+    color: $color-primary;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 .member-numbers {
-    color: $grey;
+    color: grey;
     font-size: 3rem;
     font-weight: 300;
 }
 
 .social-text{
     margin-left: 10px;
+}
+
+.members-text {
+    text-align: center;
+}
+
+.members-text a {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+.date {
+    text-align: center;
 }

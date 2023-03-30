@@ -29,5 +29,18 @@
 
 .nav-icon {
     width: 40px;
-    fill: var(--white);
+    fill: $white;
+}
+
+/* ============================================= */
+/*              Social Media Icons               */
+/* ============================================= */
+
+.social-image {
+    width: 80px;
+    height: auto;
+    fill: $white;
+    background-color: $color-primary;
+    border-radius: 50%;
+    margin: 0 auto;
 }

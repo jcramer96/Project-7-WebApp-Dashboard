@@ -1,0 +1,100 @@
+/* ============================================= */
+/*                  768px                         */
+/* ============================================= */
+
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: 55px 1fr; 
+        grid-template-rows: 55px;
+        grid-template-areas:
+        "header header"
+        "nav main";
+    }
+    nav {
+        grid-template-columns: 55px;
+        grid-template-rows: repeat(4, 50px);
+        padding: 10px 0;
+    }
+    main {
+        grid-template-columns: 50%;
+    }
+    .traffic-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .widget-container-full {
+        width: 90vw;
+    }
+    .widget-container-half { 
+        width: 45vw;
+    }
+    .main-header, .traffic, .social-stats {
+        grid-column: 1/ span 3;
+    }
+    .daily-traffic {
+        grid-column: 1/ span 1;
+        border-right: 1px solid $grey;
+    }
+    .mobile-users {
+        grid-column: 2/ span 1;
+    }
+    .recent-activity, .settings, .members, .message {
+        grid-column: 1/ span 2;
+    }
+    .social-stat-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .social-image {
+        width: 60px;
+        height: 60px;
+    }
+    .social-title {
+        font-size: 1.2rem;
+    }
+    .member-numbers {
+        font-size: 2rem;
+    }
+    .members-container {
+        width: 95%;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 70px auto 70px;
+    }
+    .members-text {
+        text-align: left;
+        margin: auto 0 auto 15px;
+    }
+    .date {
+        margin: auto;
+    }
+    .form-field,
+    .form-area,
+    #send  {
+        width: 95%;
+    }
+    .settings-button {
+        margin-left: 2.5%;
+    }
+    #save,
+    #cancel {
+        width: 90%;
+    }
+}
+
+/* ============================================= */
+/*                  1024px                         */
+/* ============================================= */
+
+@media (min-width: 1024px) {
+    .daily-traffic, .members, .message {
+        grid-column: 1/ span 1;
+    }
+    .mobile-users, .recent-activity, .settings {
+        grid-column: 2/ span 2;
+    }
+    .recent-activity{
+        border-left: 1px solid $grey;
+    }
+}

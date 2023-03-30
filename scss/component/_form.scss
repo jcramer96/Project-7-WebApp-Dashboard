@@ -1,0 +1,30 @@
+/* ============================================= */
+/*                  Form                         */
+/* ============================================= */
+
+form {
+    width: 100%;
+}
+
+.form-field {
+    width: 90%;
+    display: block;
+    margin: auto auto 15px auto;
+    height: 50px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    background-color: $light-grey;
+    padding-left: 10px;
+}
+
+.form-area {
+    width: 90%;
+    display: block;
+    margin: auto auto 15px auto;
+    height: 150px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    background-color: $light-grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
