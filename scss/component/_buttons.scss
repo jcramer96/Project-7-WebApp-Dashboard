@@ -2,12 +2,21 @@
 /*         Exit Button on Alert Flag             */
 /* ============================================= */
 
-#exit-btn {
+.alert-banner-close {
     border: none;
     background-color: transparent;
     color: $white;
     margin-top: 10px;
     margin-left: 90%;
+}
+
+/* ============================================= */
+/*                  Setting Buttons              */
+/* ============================================= */
+
+.toggle-button-on {
+    background-color: $color-primary;
+    border-bottom: $color-primary;
 }
 
 /* ============================================= */

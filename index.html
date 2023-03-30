@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/toggle-switch.css" />
   </head>
   <body>
     <header>
@@ -57,7 +58,6 @@
         <!-- alert banner -->
         <div class="alert" id="alert" >
             <!-- JS will insert alert here -->
-            <button id="exit-btn">X</button>
         </div>
         <section class="traffic">
             <div class="traffic-header">
@@ -69,21 +69,21 @@
                 <li class="traffic-nav-link">Monthly</li>
                 </ul> </div>
                 <div class="widget-container-full">
-                <!-- element line graph will attach to --> <canvas id="traffic-chart"></canvas>
+                    <canvas id="traffic-chart"></canvas>
                 </div>
         </section>
         <!-- bar graph -->
         <section class="daily-traffic"> 
             <h3>Daily Traffic</h3>
             <div class="widget-container-half">
-                <!-- element bar graph will attach to --> <canvas id="daily-chart"></canvas>
+                <canvas id="daily-chart"></canvas>
             </div> 
         </section>
         <!-- pie graph -->
         <section class="mobile-users"> 
             <h3>Mobile Users</h3>
             <div class="widget-container-half">
-                <!-- element pie graph will attach to --> <canvas id="pie-chart"></canvas>
+                <canvas id="mobile-chart"></canvas>
             </div> 
         </section>
         <section class="social-stats">
@@ -207,8 +207,24 @@
         <!-- local settings widget -->
         <section class="settings"> 
             <h3>Settings</h3>
-            <!-- custom CSS toggle code-->
-            <!-- custom CSS toggle code-->
+            <label class="switch-light switch-ios" onclick="">
+                <input type="checkbox">
+                <strong>Send Email Notifications</strong>
+                <span class="toggle-button">
+                  <span>Off</span>
+                  <span class="toggle-button-on">On</span>
+                  <a></a>
+                </span>
+            </label>
+            <label class="switch-light switch-ios" onclick="">
+                <input type="checkbox">
+                <strong>Set Profile to Public</strong>
+                <span class="toggle-button">
+                  <span>Off</span>
+                  <span class="toggle-button-on">On</span>
+                  <a></a>
+                </span>
+            </label>
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option> 
                 <option>Hawaii-Aleutian</option>
