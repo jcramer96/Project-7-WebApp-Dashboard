@@ -22,7 +22,6 @@ body {
 
 header {
     width: 100vw;
-    height: 80px;
     display: grid;
     grid-area: header;
     grid-template-columns: 2fr 50px minmax(auto, 170px);

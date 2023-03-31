@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebApp Dashboard</title>
-    <link rel="stylesheet" href=" css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/toggle-switch.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/toggle-switch.css" />
   </head>
   <body>
     <header>
@@ -207,24 +207,14 @@
         <!-- local settings widget -->
         <section class="settings"> 
             <h3>Settings</h3>
-            <label class="switch-light switch-ios" onclick="">
-                <input type="checkbox">
-                <strong>Send Email Notifications</strong>
-                <span class="toggle-button">
-                  <span>Off</span>
-                  <span class="toggle-button-on">On</span>
-                  <a></a>
-                </span>
-            </label>
-            <label class="switch-light switch-ios" onclick="">
-                <input type="checkbox">
-                <strong>Set Profile to Public</strong>
-                <span class="toggle-button">
-                  <span>Off</span>
-                  <span class="toggle-button-on">On</span>
-                  <a></a>
-                </span>
-            </label>
+            <div class="toggle-button">
+                <input type="checkbox" id="email">
+                <label for="email">Off</label>
+            </div>
+            <div class="toggle-button">
+                <input type="checkbox" id="public">
+                <label for="public">Off</label>
+            </div>
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option> 
                 <option>Hawaii-Aleutian</option>

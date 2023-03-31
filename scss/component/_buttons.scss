@@ -14,9 +14,38 @@
 /*                  Setting Buttons              */
 /* ============================================= */
 
-.toggle-button-on {
+input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: $grey;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+input::after {
+    content: "off";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: $white;
+    transition: left .3s;
+}
+
+input:checked {
     background-color: $color-primary;
-    border-bottom: $color-primary;
+}
+
+input:checked::after {
+    left: 70%;
+    content: "on"
 }
 
 /* ============================================= */
