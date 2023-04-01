@@ -74,6 +74,16 @@
     #send  {
         width: 95%;
     }
+    .toggle-button {
+        grid-template-columns: 1fr 2fr;
+    }
+    #email,
+    #public {
+        margin-left: 10px;
+    }
+    .on-off-label {
+        left: 41%;
+    }
     .settings-button {
         margin-left: 2.5%;
     }
@@ -96,5 +106,15 @@
     }
     .recent-activity{
         border-left: 1px solid $grey;
+    }
+    .toggle-button {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #email,
+    #public {
+        margin-left: 10px;
+    }
+    .on-off-label {
+        left: 79%;
     }
 }

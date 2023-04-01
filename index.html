@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="plugins/toggle-switch.css" />
   </head>
   <body>
     <header>
@@ -56,18 +55,17 @@
             <div class="tab"></div>
         </div>
         <!-- alert banner -->
-        <div class="alert" id="alert" >
-            <!-- JS will insert alert here -->
-        </div>
+        <div class="alert" id="alert" ></div>
         <section class="traffic">
             <div class="traffic-header">
                 <h3>Traffic</h3>
                 <ul class="traffic-nav">
-                <li class="traffic-nav-link">Hourly</li>
-                <li class="traffic-nav-link">Daily</li>
-                <li class="traffic-nav-link">Weekly</li> 
-                <li class="traffic-nav-link">Monthly</li>
-                </ul> </div>
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link">Weekly</li> 
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul> 
+            </div>
                 <div class="widget-container-full">
                     <canvas id="traffic-chart"></canvas>
                 </div>
@@ -208,12 +206,14 @@
         <section class="settings"> 
             <h3>Settings</h3>
             <div class="toggle-button">
+                <label class="toggle-label" for="email">Send Email Notifications</label>
                 <input type="checkbox" id="email">
-                <label for="email">Off</label>
+                    <span class="on-off-label" data-on="ON" data-off="OFF"></span>
             </div>
             <div class="toggle-button">
-                <input type="checkbox" id="public">
-                <label for="public">Off</label>
+                <label class="toggle-label" for="public">Set Profile to Public</label>
+                <input type="checkbox" id="public" value="off">
+                    <span class="on-off-label" data-on="ON" data-off="OFF"></span>
             </div>
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a Timezone</option> 
@@ -230,7 +230,7 @@
             </div>
         </section>
     </main>
-	<script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.min.js" integrity="sha512-GCiwmzA0bNGVsp1otzTJ4LWQT2jjGJENLGyLlerlzckNI30moi2EQT0AfRI7fLYYYDKR+7hnuh35r3y1uJzugw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="app.js"></script>
   </body>
 </html>

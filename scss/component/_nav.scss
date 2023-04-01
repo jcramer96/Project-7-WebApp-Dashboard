@@ -11,3 +11,11 @@
 .traffic-nav-link {
     margin: auto;
 }
+
+.traffic-nav-link-selected {
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: $color-quarternary;
+    color: $white;
+}
