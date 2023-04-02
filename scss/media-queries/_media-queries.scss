@@ -31,7 +31,7 @@
         width: 45vw;
     }
     .main-header, .traffic, .social-stats {
-        grid-column: 1/ span 3;
+        grid-column: 1/ span 2;
     }
     .daily-traffic {
         grid-column: 1/ span 1;
@@ -111,6 +111,9 @@
 /* ============================================= */
 
 @media (min-width: 1024px) {
+    .traffic {
+        margin: auto;
+    }
     .daily-traffic, .members, .message {
         grid-column: 1/ span 1;
     }
@@ -122,6 +125,11 @@
     }
     .toggle-button {
         grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
+    }
+    #timezone {
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
     #email,
     #public {

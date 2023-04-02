@@ -3,6 +3,7 @@
 /* ============================================= */
 
 * {
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,24 +25,12 @@ header {
     width: 100vw;
     display: grid;
     grid-area: header;
-    grid-template-columns: 2fr 50px minmax(auto, 170px);
+    grid-template-columns: 2fr 50px minmax(auto, 150px);
     padding: 10px 5px;
 }
 
 h1 {
     margin: auto 0 auto 5px;
-}
-
-nav {
-    padding: 10px 10% 10px;
-    display: grid;
-    grid-area: nav;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-a {
-    margin: auto;
 }
 
 main {
@@ -52,7 +41,7 @@ main {
 .profile-tag {
     display: flex;
     flex-direction: row;
-    margin-right: 5px;
+    justify-content: flex-end;
     margin-left: auto;
 
 }

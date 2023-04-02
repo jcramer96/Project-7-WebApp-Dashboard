@@ -10,8 +10,11 @@
 }
 
 .notification-bell {
-    width: 30px;
-    margin: auto 10px;
+    margin: auto;
+}
+
+#notifications {
+    display: none;
 }
 
 .bell {

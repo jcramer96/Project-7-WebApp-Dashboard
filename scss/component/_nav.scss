@@ -1,4 +1,20 @@
 /* ============================================= */
+/*                  Main Nav                     */
+/* ============================================= */
+nav {
+    padding: 10px 10% 10px;
+    display: grid;
+    grid-area: nav;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+nav a {
+    padding-left: 7px;
+    margin: auto;
+}
+
+/* ============================================= */
 /*              Traffic Subnav                   */
 /* ============================================= */
 
@@ -10,6 +26,7 @@
 
 .traffic-nav-link {
     margin: auto;
+    text-align: center;
 }
 
 .traffic-nav-link-selected {
