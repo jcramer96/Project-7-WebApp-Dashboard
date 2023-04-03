@@ -18,6 +18,13 @@
     main {
         grid-template-columns: 50% 50%;
     }
+    .alert {
+        grid-column: 1/ span 2;
+    }
+    .alert-banner {
+        text-align: left;
+        margin-left: 10px;
+    }
     .traffic-header {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -70,11 +70,19 @@ main {
 .alert {
     border: 1px solid $color-primary;
     background-color: $color-primary;
+    color: $white;
     border-radius: 5px;
     height: 40px;
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
-    display: none;
+}
+
+.alert-banner {
+    display: grid;
+    grid-template-columns: auto minmax(10px, 30px);
+    grid-template-rows: 20px;
+    margin-top: 9px;
+    text-align: center;
 }
 
 section {
