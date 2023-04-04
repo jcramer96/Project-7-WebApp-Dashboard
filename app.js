@@ -1,4 +1,16 @@
 /* ============================================= */
+/*              Notification Bell                */
+/* ============================================= */
+
+const notificationBell = document.querySelector('.notification-bell');
+const notifications = document.getElementById('notifications');
+notificationBell.addEventListener('mouseover', e => {
+    if (e.target.classList.contains("notification-bell")) {
+        notifications.style.display = "flex"
+    }
+});
+
+/* ============================================= */
 /*                  Alert Banner                 */
 /* ============================================= */
 
@@ -12,7 +24,7 @@ alertBanner.innerHTML =
 alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")) {
-    alertBanner.style.display = "none" 
+        alertBanner.style.display = "none" 
     }
 });
 

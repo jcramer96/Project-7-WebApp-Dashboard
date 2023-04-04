@@ -13,8 +13,28 @@
     margin: auto;
 }
 
-#notifications {
+.notifications ul {
+    position: absolute;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-secondary;
+    background-color: $color-secondary;
+    margin-top: 30px;
+    margin-left: -165px;
     display: none;
+}
+
+.notifications ul li {
+    display: grid;
+    grid-template-columns: auto minmax(10px, 30px);
+    grid-template-rows: auto;
+    padding: 20px 0 20px 15px;
+    border-bottom: 1px solid $white;
+}
+
+.notifications ul li:last-of-type {
+    border-bottom: none;
 }
 
 .bell {
