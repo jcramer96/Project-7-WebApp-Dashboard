@@ -10,6 +10,15 @@ notificationBell.addEventListener('mouseover', e => {
     }
 });
 
+const notificationList = document.querySelector('.notification-list');
+const notificationClose = document.getElementById("notification-close")
+notificationClose.addEventListener("click", (e) => {
+    let target = e.target;
+        for (let i = 0; i < notificationList.length; i++) {
+            notificationList[i].remove();
+        }
+})
+
 /* ============================================= */
 /*                  Alert Banner                 */
 /* ============================================= */
