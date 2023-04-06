@@ -70,30 +70,31 @@
             <h2 class="headline">Dashboard</h2>
             <div class="tab"></div>
         </div>
-        <!-- alert banner -->
+            <!-- alert banner -->
         <div class="alert" id="alert" ></div>
         <section class="traffic">
+            <!-- line graph -->
             <div class="traffic-header">
                 <h3>Traffic</h3>
                 <ul class="traffic-nav">
-                    <li class="traffic-nav-link">Hourly</li>
-                    <li class="traffic-nav-link">Daily</li>
-                    <li class="traffic-nav-link">Weekly</li> 
-                    <li class="traffic-nav-link">Monthly</li>
+                    <li class="traffic-nav-link" id="hourly">Hourly</li>
+                    <li class="traffic-nav-link" id="daily">Daily</li>
+                    <li class="traffic-nav-link" id="weekly">Weekly</li> 
+                    <li class="traffic-nav-link" id="monthly">Monthly</li>
                 </ul> 
             </div>
                 <div class="widget-container-full">
                     <canvas id="traffic-chart"></canvas>
                 </div>
         </section>
-        <!-- bar graph -->
+            <!-- bar graph -->
         <section class="daily-traffic"> 
             <h3>Daily Traffic</h3>
             <div class="widget-container-half">
                 <canvas id="daily-chart"></canvas>
             </div> 
         </section>
-        <!-- pie graph -->
+            <!-- doughnut graph -->
         <section class="mobile-users"> 
             <h3>Mobile Users</h3>
             <div class="widget-container-half">

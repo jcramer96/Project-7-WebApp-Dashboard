@@ -9,40 +9,46 @@
     border-right: 1px solid $white;
 }
 
+.notifications {
+    display: none;
+}
+
 .notification-bell {
     margin: auto;
 }
 
-.notifications ul {
-    position: absolute;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid $color-secondary;
-    background-color: $color-secondary;
-    margin-top: 30px;
-    margin-left: -165px;
-}
-
-.notifications ul li {
-    display: grid;
-    grid-template-columns: minmax(10px, 30px) auto minmax(10px, 30px);
-    grid-template-rows: auto;
-    padding: 20px 0 20px 15px;
-    border-bottom: 1px solid $white;
-}
-
-.notifications ul li:last-of-type {
-    border-bottom: none;
-}
-
-.notification-circle {
-    height: 10px;
-    width: 10px;
-    border: 1px solid $color-quarternary;
-    background-color: $color-quarternary;
-    border-radius: 50%;
-    margin-top: 5px;
+.notification-bell:hover {
+    .notifications ul {
+        position: absolute;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $color-secondary;
+        background-color: $color-secondary;
+        margin-top: 30px;
+        margin-left: -165px;
+    }
+    
+    .notifications ul li {
+        display: grid;
+        grid-template-columns: minmax(10px, 30px) auto minmax(10px, 30px);
+        grid-template-rows: auto;
+        padding: 20px 0 20px 15px;
+        border-bottom: 1px solid $white;
+    }
+    
+    .notifications ul li:last-of-type {
+        border-bottom: none;
+    }
+    
+    .notification-circle {
+        height: 10px;
+        width: 10px;
+        border: 1px solid $color-quarternary;
+        background-color: $color-quarternary;
+        border-radius: 50%;
+        margin-top: 5px;
+    }
 }
 
 .bell {
