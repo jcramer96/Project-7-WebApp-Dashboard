@@ -81,6 +81,12 @@
         display: grid;
         grid-template-columns: 70px auto 70px;
     }
+    .arrow {
+        display: flex;
+        margin: auto auto auto 50px;
+        font-size: 1.2rem;
+        color: $color-primary
+    }
     .members-text {
         text-align: left;
         margin: auto 0 auto 15px;
