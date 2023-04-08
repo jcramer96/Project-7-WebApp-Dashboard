@@ -94,15 +94,15 @@
         width: 95%;
         margin: 10px auto;
     }
-    .toggle-button {
+    .toggle-settings {
         grid-template-columns: 1fr 2fr;
+    }
+    .on-off-label {
+        left: 30px;
     }
     #email,
     #public {
         margin-left: 10px;
-    }
-    .on-off-label {
-        left: 41%;
     }
     .settings-button {
         margin-left: 2.5%;
@@ -130,19 +130,25 @@
     .recent-activity{
         border-left: 1px solid $grey;
     }
-    .toggle-button {
+    .toggle-settings {
         grid-template-columns: repeat(2, 1fr);
-        padding: 20px 0;
     }
     #timezone {
-        margin-top: 25px;
+        margin-top: 39px;
         margin-bottom: 15px;
     }
     #email,
     #public {
         margin-left: 10px;
     }
-    .on-off-label {
-        left: 78.7%;
+    .settings-button {
+        margin-top: 15px;
+    }
+    section:last-of-type {
+        padding-bottom: 0;
+        border-left: 1px solid $grey;
+    }
+    .message {
+        border-bottom: none;
     }
 }

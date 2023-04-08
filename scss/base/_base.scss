@@ -43,7 +43,7 @@ main {
     flex-direction: row;
     justify-content: flex-end;
     margin-left: auto;
-
+    border-left: 1px solid $white;
 }
 
 .bell-container {
@@ -91,7 +91,7 @@ section {
 
 section:last-of-type {
     border-bottom: none;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .traffic,
